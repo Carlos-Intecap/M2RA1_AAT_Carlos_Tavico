@@ -1,0 +1,30 @@
+.container-main{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.container-main section, .container-main aside, .container-form{
+    margin: 15px;
+    padding: 25px;
+}
+.container-backround{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-evenly;
+}
+.blue-button{
+    width: 200px;
+}
+#logo_intecap_51{
+    width: 320px;
+}
+@media(max-width:1280px){
+    .container-main{
+      display: grid;
+      grid-template-columns: 100%;
+      text-align: center;
+    }
+    .container-backround{
+        grid-template-columns: 50%;
+    }
+  }

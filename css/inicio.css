@@ -1,0 +1,28 @@
+.container-backround{
+    text-align: justify;
+}
+.container-mmv article:hover, .container-vl article:hover{
+    background-color: lightgray;
+}
+article h2{
+    text-align: center;
+}
+.container-mmv{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.container-vl{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+#logo_intecap_52{
+    width: 100%;
+}
+@media(max-width:1280px){
+    .container-mmv, .container-vl{
+        grid-template-columns: 100%;
+    }
+    .container-vl aside{
+        text-align: center;
+    }
+}

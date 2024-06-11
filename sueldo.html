@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo líquido</title>
+    <link rel="shortcut icon" href="img/icono_intecap.png" />
+    <link rel="stylesheet" href="css/interfaz.css">
+    <link rel="stylesheet" href="css/sueldo.css">
+    <script src="js/sueldo.js"></script>
+</head>
+<body>
+    <header>
+        <aside>
+            <img id="logo_intecap" src="img/logo_intecap.png" alt="">
+        </aside>
+        <aside id="redes">
+            <a href="https://www.facebook.com/intecapoficial"><img src="img/icono_facebook.png" alt=""></a>
+            <a href="https://twitter.com/intecapoficial"><img src="img/icono_x.png" alt=""></a>
+            <a href="https://www.instagram.com/intecapoficial/?hl=es"><img src="img/icono_instagram.png" alt=""></a>
+            <a href="https://www.youtube.com/user/intecapguate"><img src="img/icono_youtube.png" alt=""></a>
+            <a href="https://gt.linkedin.com/school/intecapoficial/"><img src="img/icono_linkedin.png" alt=""></a>
+        </aside>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="empleados.html">Empleados</a></li>
+            <li><a class="active" href="sueldo.html">Sueldo líquido</a></li>
+            <li><a href="indemnizacion.html">Indemnización</a></li>
+        </ul>
+    </nav>
+    <section class="container-main">
+        <section class="container-backround">
+            <div class="container-ie">
+                <article>
+                    <h2>Ingresos</h2>
+                    <form class="container-form">
+                        <label for="txt_salario">Salario</label>
+                        <br><input type="number" id="txt_salario" onblur="obtenerIGSS()" placeholder="Q.0.00">
+                        <br><label for="txt_bonificacion">Bonificación</label>
+                        <br><input type="number" id="txt_bonificacion" placeholder="Q.0.00">
+                        <br><label for="txt_comisiones">Comisiones</label>
+                        <br><input type="number" id="txt_comisiones" placeholder="Q.0.00">
+                        <br><p>Total Ganado</p>
+                        <p id="totalIngresos">Q.0.00</p>
+                    </form>
+                </article>
+                <article>
+                    <h2>Egresos</h2>
+                    <form class="container-form">
+                        <label for="txt_ahorro">Ahorro</label>
+                        <br><input type="number" id="txt_ahorro" placeholder="Q.0.00">
+                        <br><label for="txt_IGSS">IGSS</label>
+                        <br><input type="number" disabled id="txt_IGSS" placeholder="Q.0.00">
+                        <br><label for="txt_prestamos">Prestamos / otros descuentos</label>
+                        <br><input type="number" id="txt_prestamos" placeholder="Q.0.00">
+                        <br><p>Total Descuentos</p>
+                        <p id="totalEgresos">Q.0.00</p>
+                    </form>
+                </article>
+            </div>
+            <button class="blue-button" onclick="obtenerSueldo()">Obtener sueldo líquido</button>
+            <h2 id="totalSalario">Q.0.00</h2>
+        </section>
+        <aside>
+            <img id="logo_intecap_51" src="img/logo_intecap_51.jpg" alt="">
+        </aside>
+    </section>
+</body>
+</html>
