@@ -15,9 +15,6 @@ article h2{
     display: grid;
     grid-template-columns: 80% 20%;
 }
-#logo_intecap_52{
-    width: 100%;
-}
 @media(max-width:1280px){
     .container-mmv, .container-vl{
         grid-template-columns: 100%;

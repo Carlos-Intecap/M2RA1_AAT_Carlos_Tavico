@@ -8,15 +8,15 @@
 }
 .container-backround{
     text-align: center;
+    
+}
+.container-datos{
     display: grid;
     grid-template-columns: 30% 30%;
     justify-content: space-evenly;
 }
-.blue-button{
-    width: 200px;
-}
-#logo_intecap_51{
-    width: 320px;
+.container-main button{
+    width: 70%;
 }
 @media(max-width:1280px){
     .container-main{
@@ -25,6 +25,6 @@
       text-align: center;
     }
     .container-backround{
-        grid-template-columns: 50%;
+        grid-template-columns: 100%;
     }
   }

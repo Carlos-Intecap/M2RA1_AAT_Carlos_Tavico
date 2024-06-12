@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="img/icono_intecap.png" />
     <link rel="stylesheet" href="css/interfaz.css">
     <link rel="stylesheet" href="css/indemnizacion.css">
-    <script src="js/indemnizacion.js"></script>
 </head>
 <body>
     <header>
@@ -25,44 +24,55 @@
     <nav>
         <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="empleados.html">Empleados</a></li>
             <li><a href="sueldo.html">Sueldo líquido</a></li>
             <li><a class="active" href="indemnizacion.html">Indemnización</a></li>
         </ul>
     </nav>
     <section class="container-main">
         <section class="container-backround">
-            <div>
-                <h2>Indemnización</h2>
-                <form class="container-form">
-                    <label for="txt_sueldo">Sueldo base</label>
-                    <br><input type="number" id="txt_sueldo" placeholder="Q.0.00">
-                    <br><label for="txt_fecha_inicial">Fecha de ingreso</label>
-                    <br><input type="date" id="txt_fecha_inicial" oninput="calcularDias()">
-                    <br><label for="txt_fecha_final">Fecha de retiro</label>
-                    <br><input type="date" id="txt_fecha_final" oninput="calcularDias()">
-                    <br><label for="txt_dias">Cantidad de días trabajados</label>
-                    <br><input type="number" disabled id="txt_dias">
-                    <br><label for="txt_meses">Cantidad de meses trabajados</label>
-                    <br><input type="number" disabled id="txt_meses">
-                    <br><label for="txt_cantidad">Cantidad de años trabajados</label>
-                    <br><input type="number" disabled id="txt_cantidad">
-                    <br><label for="txt_pendiente">Salario pendiente</label>
-                    <br><input type="number" id="txt_pendiente" placeholder="Q.0.00">
-                    <br><label for="txt_deudas">Deudas o cobros pendientes</label>
-                    <br><input type="number" id="txt_deudas" placeholder="Q.0.00">
-                </form>
+            <div class="container-datos">
+                <article>
+                    <h2>Datos</h2>
+                    <form class="container-form">
+                        <label for="txt_sueldo">Sueldo base</label>
+                        <br><input type="number" id="txt_sueldo" placeholder="Q.0.00">
+                        <br><label for="txt_fecha_inicial">Fecha de ingreso</label>
+                        <br><input type="date" id="txt_fecha_inicial" oninput="calcularDias()">
+                        <br><label for="txt_fecha_final">Fecha de retiro</label>
+                        <br><input type="date" id="txt_fecha_final" oninput="calcularDias()">
+                        <br><label for="txt_pendiente">Salario pendiente</label>
+                        <br><input type="number" id="txt_pendiente" placeholder="Q.0.00">
+                        <br><label for="txt_deudas">Deudas o cobros pendientes</label>
+                        <br><input type="number" id="txt_deudas" placeholder="Q.0.00">
+                    </form>
+                </article>
+                <article>
+                    <h2>Indemnización</h2>
+                    <form class="container-form">
+                        <label for="txt_dias">Cantidad de días trabajados</label>
+                        <br><input type="number" disabled id="txt_dias">
+                        <br><label for="txt_meses">Cantidad de meses trabajados</label>
+                        <br><input type="number" disabled id="txt_meses">
+                        <br><label for="txt_cantidad">Cantidad de años trabajados</label>
+                        <br><input type="number" disabled id="txt_cantidad">
+                        <p>Bono 14</p>
+                        <p id="totalBono14">Q.0</p>
+                        <p>Aguinaldo</p>
+                        <p id="totalAguinaldo">Q.0</p>
+                        
+                    </form>
+                </article>
             </div>
             <div>
                 <button class="blue-button" onclick="obtenerIndemnizacion()">Calcular</button>
-                <p id="totalBono14">Bono 14: Q.0</p>
-                <p id="totalAguinaldo">Aguinaldo: Q.0</p>
-                <p id="totalIndemnizacion">Indemnización: Q.0</p>
+                <p>Indemnización</p>
+                <p id="totalIndemnizacion">Q.0</p>
             </div>
         </section>
         <aside>
-            <img id="logo_intecap_51" src="img/logo_intecap_51.jpg" alt="">
+            <img id="logo_intecap_52" src="img/logo_intecap_52.jpg" alt="">
         </aside>
     </section>
+    <script src="js/indemnizacion.js"></script>
 </body>
 </html>
