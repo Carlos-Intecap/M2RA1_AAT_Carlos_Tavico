@@ -1,6 +1,6 @@
 # M2 RA1 - AAT
 ## INTECAP
-- Fecha: 12/06/2024
+- Fecha: 17/06/2024
 - Carrera: Desarrollador Fullstack
 - Modulo 2: Resultado de Aprendizaje
 

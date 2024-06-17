@@ -4,8 +4,8 @@ const txtMeses = document.getElementById("txt_meses") as HTMLInputElement;
 const txtCantidad = document.getElementById("txt_cantidad") as HTMLInputElement;
 const txtPendiente = document.getElementById("txt_pendiente") as HTMLInputElement;
 const txtDeudas = document.getElementById("txt_deudas") as HTMLInputElement;
-const pTotalBono14 = document.getElementById("totalBono14") as HTMLElement;
-const pTotalAguinaldo = document.getElementById("totalAguinaldo") as HTMLElement;
+const txtBono14 = document.getElementById("txt_bono14") as HTMLInputElement;
+const txtAguinaldo = document.getElementById("txt_aguinaldo") as HTMLInputElement;
 const pTotalIndemnizacion = document.getElementById("totalIndemnizacion") as HTMLElement;
 
 class Indemnizacion {
@@ -58,8 +58,8 @@ function obtenerIndemnizacion(){
     if(datos[0]&&datos[1]&&datos[2]&&datos[3]&&datos[4]){
         let sueldos:number[] = [];
         sueldos = indemnizacion.totalIndemnizacion(datos);
-        pTotalBono14.innerHTML="Q."+sueldos[0].toFixed(2);
-        pTotalAguinaldo.innerHTML="Q."+sueldos[1].toFixed(2);
+        txtBono14.value="Q."+sueldos[0].toFixed(2);
+        txtAguinaldo.value="Q."+sueldos[1].toFixed(2);
         pTotalIndemnizacion.innerHTML="Q."+sueldos[2].toFixed(2);
     } else {
         alert("Debes llenar todos los campos")

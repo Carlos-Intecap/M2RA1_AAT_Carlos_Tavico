@@ -47,7 +47,7 @@
                     </form>
                 </article>
                 <article>
-                    <h2>Indemnización</h2>
+                    <h2>Prestaciones</h2>
                     <form class="container-form">
                         <label for="txt_dias">Cantidad de días trabajados</label>
                         <br><input type="number" disabled id="txt_dias">
@@ -55,18 +55,17 @@
                         <br><input type="number" disabled id="txt_meses">
                         <br><label for="txt_cantidad">Cantidad de años trabajados</label>
                         <br><input type="number" disabled id="txt_cantidad">
-                        <p>Bono 14</p>
-                        <p id="totalBono14">Q.0</p>
-                        <p>Aguinaldo</p>
-                        <p id="totalAguinaldo">Q.0</p>
-                        
+                        <br><label for="txt_bono14">Bono 14</label>
+                        <br><input type="text" disabled id="txt_bono14">
+                        <br><label for="txt_aguinaldo">Aguinaldo</label>
+                        <br><input type="text" disabled id="txt_aguinaldo">
                     </form>
                 </article>
             </div>
             <div>
                 <button class="blue-button" onclick="obtenerIndemnizacion()">Calcular</button>
-                <p>Indemnización</p>
-                <p id="totalIndemnizacion">Q.0</p>
+                <h2>Indemnización</h2>
+                <h2 id="totalIndemnizacion">Q.0</h2>
             </div>
         </section>
         <aside>
